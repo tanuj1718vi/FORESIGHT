@@ -1,0 +1,314 @@
+{
+  "evaluated_at": "2026-08-29T20:59:31.291585",
+  "n_splits": 3,
+  "horizon_days": 30,
+  "primary_metric": "wape",
+  "champion_model_name": "XGBoost",
+  "champion_mean_wape": 0.1894,
+  "leaderboard": [
+    {
+      "model_name": "Naive (Persistence)",
+      "model_type": "baseline",
+      "mean_wape": 0.3565,
+      "mean_rmse": 20.58,
+      "mean_mae": 12.997,
+      "mean_smape": 45.79,
+      "mean_r2": 0.4607,
+      "fold_scores": [
+        {
+          "fold": 1,
+          "val_period": "2024-11-03 to 2024-12-02",
+          "wape": 0.3561,
+          "rmse": 21.257,
+          "mae": 13.346,
+          "smape": 45.53,
+          "r2": 0.4688
+        },
+        {
+          "fold": 2,
+          "val_period": "2024-11-17 to 2024-12-16",
+          "wape": 0.3753,
+          "rmse": 22.028,
+          "mae": 13.821,
+          "smape": 48.3,
+          "r2": 0.4349
+        },
+        {
+          "fold": 3,
+          "val_period": "2024-12-01 to 2024-12-30",
+          "wape": 0.338,
+          "rmse": 18.454,
+          "mae": 11.824,
+          "smape": 43.55,
+          "r2": 0.4784
+        }
+      ]
+    },
+    {
+      "model_name": "Seasonal Naive (s=7)",
+      "model_type": "baseline",
+      "mean_wape": 0.4865,
+      "mean_rmse": 27.417,
+      "mean_mae": 17.751,
+      "mean_smape": 61.96,
+      "mean_r2": 0.0416,
+      "fold_scores": [
+        {
+          "fold": 1,
+          "val_period": "2024-11-03 to 2024-12-02",
+          "wape": 0.4731,
+          "rmse": 27.279,
+          "mae": 17.735,
+          "smape": 58.15,
+          "r2": 0.1252
+        },
+        {
+          "fold": 2,
+          "val_period": "2024-11-17 to 2024-12-16",
+          "wape": 0.5518,
+          "rmse": 30.489,
+          "mae": 20.32,
+          "smape": 70.3,
+          "r2": -0.0825
+        },
+        {
+          "fold": 3,
+          "val_period": "2024-12-01 to 2024-12-30",
+          "wape": 0.4345,
+          "rmse": 24.482,
+          "mae": 15.199,
+          "smape": 57.44,
+          "r2": 0.082
+        }
+      ]
+    },
+    {
+      "model_name": "Moving Average (7d)",
+      "model_type": "baseline",
+      "mean_wape": 0.3693,
+      "mean_rmse": 20.512,
+      "mean_mae": 13.48,
+      "mean_smape": 54.71,
+      "mean_r2": 0.4654,
+      "fold_scores": [
+        {
+          "fold": 1,
+          "val_period": "2024-11-03 to 2024-12-02",
+          "wape": 0.3715,
+          "rmse": 21.5,
+          "mae": 13.924,
+          "smape": 54.5,
+          "r2": 0.4565
+        },
+        {
+          "fold": 2,
+          "val_period": "2024-11-17 to 2024-12-16",
+          "wape": 0.4113,
+          "rmse": 22.694,
+          "mae": 15.148,
+          "smape": 59.67,
+          "r2": 0.4003
+        },
+        {
+          "fold": 3,
+          "val_period": "2024-12-01 to 2024-12-30",
+          "wape": 0.325,
+          "rmse": 17.342,
+          "mae": 11.369,
+          "smape": 49.96,
+          "r2": 0.5394
+        }
+      ]
+    },
+    {
+      "model_name": "Ridge Linear Regression",
+      "model_type": "ml",
+      "mean_wape": 0.3049,
+      "mean_rmse": 16.957,
+      "mean_mae": 11.124,
+      "mean_smape": 48.88,
+      "mean_r2": 0.6341,
+      "fold_scores": [
+        {
+          "fold": 1,
+          "val_period": "2024-11-03 to 2024-12-02",
+          "wape": 0.3116,
+          "rmse": 17.755,
+          "mae": 11.679,
+          "smape": 48.24,
+          "r2": 0.6294
+        },
+        {
+          "fold": 2,
+          "val_period": "2024-11-17 to 2024-12-16",
+          "wape": 0.3236,
+          "rmse": 18.019,
+          "mae": 11.918,
+          "smape": 50.56,
+          "r2": 0.6219
+        },
+        {
+          "fold": 3,
+          "val_period": "2024-12-01 to 2024-12-30",
+          "wape": 0.2795,
+          "rmse": 15.096,
+          "mae": 9.776,
+          "smape": 47.83,
+          "r2": 0.651
+        }
+      ]
+    },
+    {
+      "model_name": "Random Forest",
+      "model_type": "ml",
+      "mean_wape": 0.2033,
+      "mean_rmse": 11.056,
+      "mean_mae": 7.417,
+      "mean_smape": 46.46,
+      "mean_r2": 0.8444,
+      "fold_scores": [
+        {
+          "fold": 1,
+          "val_period": "2024-11-03 to 2024-12-02",
+          "wape": 0.2109,
+          "rmse": 11.93,
+          "mae": 7.904,
+          "smape": 47.42,
+          "r2": 0.8327
+        },
+        {
+          "fold": 2,
+          "val_period": "2024-11-17 to 2024-12-16",
+          "wape": 0.2075,
+          "rmse": 11.46,
+          "mae": 7.643,
+          "smape": 49.34,
+          "r2": 0.8471
+        },
+        {
+          "fold": 3,
+          "val_period": "2024-12-01 to 2024-12-30",
+          "wape": 0.1916,
+          "rmse": 9.779,
+          "mae": 6.703,
+          "smape": 42.62,
+          "r2": 0.8535
+        }
+      ]
+    },
+    {
+      "model_name": "Gradient Boosting (HistGBM)",
+      "model_type": "ml",
+      "mean_wape": 0.1912,
+      "mean_rmse": 10.428,
+      "mean_mae": 6.97,
+      "mean_smape": 41.62,
+      "mean_r2": 0.8615,
+      "fold_scores": [
+        {
+          "fold": 1,
+          "val_period": "2024-11-03 to 2024-12-02",
+          "wape": 0.1936,
+          "rmse": 10.999,
+          "mae": 7.257,
+          "smape": 42.08,
+          "r2": 0.8578
+        },
+        {
+          "fold": 2,
+          "val_period": "2024-11-17 to 2024-12-16",
+          "wape": 0.1958,
+          "rmse": 10.87,
+          "mae": 7.212,
+          "smape": 44.06,
+          "r2": 0.8624
+        },
+        {
+          "fold": 3,
+          "val_period": "2024-12-01 to 2024-12-30",
+          "wape": 0.1841,
+          "rmse": 9.415,
+          "mae": 6.441,
+          "smape": 38.71,
+          "r2": 0.8643
+        }
+      ]
+    },
+    {
+      "model_name": "XGBoost",
+      "model_type": "ml",
+      "mean_wape": 0.1894,
+      "mean_rmse": 10.362,
+      "mean_mae": 6.904,
+      "mean_smape": 42.45,
+      "mean_r2": 0.8632,
+      "fold_scores": [
+        {
+          "fold": 1,
+          "val_period": "2024-11-03 to 2024-12-02",
+          "wape": 0.1916,
+          "rmse": 10.892,
+          "mae": 7.183,
+          "smape": 43.11,
+          "r2": 0.8605
+        },
+        {
+          "fold": 2,
+          "val_period": "2024-11-17 to 2024-12-16",
+          "wape": 0.1933,
+          "rmse": 10.826,
+          "mae": 7.12,
+          "smape": 44.2,
+          "r2": 0.8635
+        },
+        {
+          "fold": 3,
+          "val_period": "2024-12-01 to 2024-12-30",
+          "wape": 0.1832,
+          "rmse": 9.369,
+          "mae": 6.41,
+          "smape": 40.03,
+          "r2": 0.8656
+        }
+      ]
+    },
+    {
+      "model_name": "Quantile Gradient Boosting (P10/P50/P90)",
+      "model_type": "ml",
+      "mean_wape": 0.2023,
+      "mean_rmse": 11.468,
+      "mean_mae": 7.377,
+      "mean_smape": 44.28,
+      "mean_r2": 0.8328,
+      "fold_scores": [
+        {
+          "fold": 1,
+          "val_period": "2024-11-03 to 2024-12-02",
+          "wape": 0.2084,
+          "rmse": 12.355,
+          "mae": 7.811,
+          "smape": 45.0,
+          "r2": 0.8205
+        },
+        {
+          "fold": 2,
+          "val_period": "2024-11-17 to 2024-12-16",
+          "wape": 0.2092,
+          "rmse": 12.092,
+          "mae": 7.703,
+          "smape": 46.79,
+          "r2": 0.8297
+        },
+        {
+          "fold": 3,
+          "val_period": "2024-12-01 to 2024-12-30",
+          "wape": 0.1892,
+          "rmse": 9.958,
+          "mae": 6.618,
+          "smape": 41.04,
+          "r2": 0.8481
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+# Testing Environment Overrides
+app:
+  debug: true
+
+data:
+  history_days_required: 14
+
+forecasting:
+  default_horizon_days: 7
+  backtest_splits: 2

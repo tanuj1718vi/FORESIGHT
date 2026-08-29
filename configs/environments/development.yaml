@@ -1,0 +1,6 @@
+# Development Environment Overrides
+app:
+  debug: true
+
+forecasting:
+  backtest_splits: 2

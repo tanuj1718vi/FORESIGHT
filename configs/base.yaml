@@ -1,0 +1,66 @@
+# ==============================================================================
+# Project FORESIGHT - Base Configuration
+# Default platform settings across data, features, forecasting, inventory & risk
+# ==============================================================================
+
+app:
+  name: "FORESIGHT"
+  version: "0.1.0"
+  description: "AI-Powered Demand Forecasting & Inventory Intelligence Platform"
+  timezone: "UTC"
+
+data:
+  date_column: "date"
+  sku_column: "sku_id"
+  target_column: "quantity"
+  category_column: "category"
+  store_column: "store_id"
+  price_column: "price"
+  inventory_column: "inventory_level"
+  lead_time_column: "lead_time_days"
+  promotion_column: "is_promoted"
+  default_lead_time_days: 7
+  history_days_required: 90
+
+features:
+  lags: [1, 7, 14, 21, 28, 56]
+  rolling_windows: [7, 14, 28]
+  rolling_metrics: ["mean", "std", "min", "max"]
+  calendar_features:
+    - "day_of_week"
+    - "day_of_month"
+    - "week_of_year"
+    - "month"
+    - "quarter"
+    - "year"
+    - "is_weekend"
+  include_holidays: true
+
+forecasting:
+  default_horizon_days: 30
+  backtest_splits: 4
+  backtest_step_days: 14
+  primary_metric: "wape"
+  models:
+    - "naive"
+    - "seasonal_naive"
+    - "moving_average"
+    - "linear_regression"
+    - "random_forest"
+    - "xgboost"
+  confidence_intervals: [0.10, 0.50, 0.90]
+
+inventory:
+  default_service_level: 0.95
+  holding_cost_annual_rate: 0.20
+  ordering_cost_fixed: 50.0
+  working_days_per_year: 365
+  days_of_supply_low_threshold: 7
+  days_of_supply_high_threshold: 45
+
+risk:
+  stockout_thresholds:
+    low: 0.25
+    medium: 0.50
+    high: 0.75
+  overstock_threshold_days: 60

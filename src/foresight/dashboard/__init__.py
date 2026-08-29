@@ -1,0 +1,1 @@
+"""FORESIGHT Streamlit Dashboard package."""

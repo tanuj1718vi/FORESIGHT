@@ -1,0 +1,570 @@
+{
+  "audit_date": "2026-08-29T20:59:41.045237",
+  "model_name": "XGBoost",
+  "sample_records_evaluated": 2000,
+  "global_feature_importances": [
+    {
+      "feature_name": "rolling_mean_28",
+      "category": "rolling_stats",
+      "mean_abs_shap": 8.832,
+      "rank": 1,
+      "relative_importance_pct": 35.49
+    },
+    {
+      "feature_name": "day_of_week",
+      "category": "temporal",
+      "mean_abs_shap": 2.2422,
+      "rank": 2,
+      "relative_importance_pct": 9.01
+    },
+    {
+      "feature_name": "rolling_mean_14",
+      "category": "rolling_stats",
+      "mean_abs_shap": 2.1447,
+      "rank": 3,
+      "relative_importance_pct": 8.62
+    },
+    {
+      "feature_name": "discount_percentage",
+      "category": "pricing_promo",
+      "mean_abs_shap": 1.2049,
+      "rank": 4,
+      "relative_importance_pct": 4.84
+    },
+    {
+      "feature_name": "price_ratio",
+      "category": "pricing_promo",
+      "mean_abs_shap": 1.1956,
+      "rank": 5,
+      "relative_importance_pct": 4.8
+    },
+    {
+      "feature_name": "month",
+      "category": "temporal",
+      "mean_abs_shap": 0.9211,
+      "rank": 6,
+      "relative_importance_pct": 3.7
+    },
+    {
+      "feature_name": "inventory_level",
+      "category": "operational",
+      "mean_abs_shap": 0.7148,
+      "rank": 7,
+      "relative_importance_pct": 2.87
+    },
+    {
+      "feature_name": "is_weekend",
+      "category": "temporal",
+      "mean_abs_shap": 0.7096,
+      "rank": 8,
+      "relative_importance_pct": 2.85
+    },
+    {
+      "feature_name": "lag_56",
+      "category": "autoregressive_lag",
+      "mean_abs_shap": 0.6893,
+      "rank": 9,
+      "relative_importance_pct": 2.77
+    },
+    {
+      "feature_name": "units_on_order",
+      "category": "categorical_hierarchy",
+      "mean_abs_shap": 0.6022,
+      "rank": 10,
+      "relative_importance_pct": 2.42
+    },
+    {
+      "feature_name": "week_of_year",
+      "category": "temporal",
+      "mean_abs_shap": 0.5484,
+      "rank": 11,
+      "relative_importance_pct": 2.2
+    },
+    {
+      "feature_name": "lag_1",
+      "category": "autoregressive_lag",
+      "mean_abs_shap": 0.5425,
+      "rank": 12,
+      "relative_importance_pct": 2.18
+    },
+    {
+      "feature_name": "rolling_mean_7",
+      "category": "rolling_stats",
+      "mean_abs_shap": 0.4527,
+      "rank": 13,
+      "relative_importance_pct": 1.82
+    },
+    {
+      "feature_name": "lag_28",
+      "category": "autoregressive_lag",
+      "mean_abs_shap": 0.3216,
+      "rank": 14,
+      "relative_importance_pct": 1.29
+    },
+    {
+      "feature_name": "inventory_ratio",
+      "category": "operational",
+      "mean_abs_shap": 0.316,
+      "rank": 15,
+      "relative_importance_pct": 1.27
+    },
+    {
+      "feature_name": "lag_21",
+      "category": "autoregressive_lag",
+      "mean_abs_shap": 0.2379,
+      "rank": 16,
+      "relative_importance_pct": 0.96
+    },
+    {
+      "feature_name": "store_code",
+      "category": "categorical_hierarchy",
+      "mean_abs_shap": 0.22,
+      "rank": 17,
+      "relative_importance_pct": 0.88
+    },
+    {
+      "feature_name": "demand_growth_7_28",
+      "category": "velocity_trend",
+      "mean_abs_shap": 0.2167,
+      "rank": 18,
+      "relative_importance_pct": 0.87
+    },
+    {
+      "feature_name": "category_code",
+      "category": "categorical_hierarchy",
+      "mean_abs_shap": 0.2041,
+      "rank": 19,
+      "relative_importance_pct": 0.82
+    },
+    {
+      "feature_name": "lag_14",
+      "category": "autoregressive_lag",
+      "mean_abs_shap": 0.1794,
+      "rank": 20,
+      "relative_importance_pct": 0.72
+    },
+    {
+      "feature_name": "unit_price",
+      "category": "pricing_promo",
+      "mean_abs_shap": 0.1779,
+      "rank": 21,
+      "relative_importance_pct": 0.71
+    },
+    {
+      "feature_name": "min_order_qty",
+      "category": "operational",
+      "mean_abs_shap": 0.1675,
+      "rank": 22,
+      "relative_importance_pct": 0.67
+    },
+    {
+      "feature_name": "sin_month",
+      "category": "temporal",
+      "mean_abs_shap": 0.1672,
+      "rank": 23,
+      "relative_importance_pct": 0.67
+    },
+    {
+      "feature_name": "is_promoted_int",
+      "category": "pricing_promo",
+      "mean_abs_shap": 0.1533,
+      "rank": 24,
+      "relative_importance_pct": 0.62
+    },
+    {
+      "feature_name": "rolling_min_28",
+      "category": "rolling_stats",
+      "mean_abs_shap": 0.139,
+      "rank": 25,
+      "relative_importance_pct": 0.56
+    },
+    {
+      "feature_name": "days_of_inventory",
+      "category": "operational",
+      "mean_abs_shap": 0.1378,
+      "rank": 26,
+      "relative_importance_pct": 0.55
+    },
+    {
+      "feature_name": "rolling_std_28",
+      "category": "rolling_stats",
+      "mean_abs_shap": 0.1335,
+      "rank": 27,
+      "relative_importance_pct": 0.54
+    },
+    {
+      "feature_name": "rolling_min_7",
+      "category": "rolling_stats",
+      "mean_abs_shap": 0.1315,
+      "rank": 28,
+      "relative_importance_pct": 0.53
+    },
+    {
+      "feature_name": "lead_time_days",
+      "category": "operational",
+      "mean_abs_shap": 0.1201,
+      "rank": 29,
+      "relative_importance_pct": 0.48
+    },
+    {
+      "feature_name": "rolling_std_14",
+      "category": "rolling_stats",
+      "mean_abs_shap": 0.1028,
+      "rank": 30,
+      "relative_importance_pct": 0.41
+    },
+    {
+      "feature_name": "lag_7",
+      "category": "autoregressive_lag",
+      "mean_abs_shap": 0.0981,
+      "rank": 31,
+      "relative_importance_pct": 0.39
+    },
+    {
+      "feature_name": "price",
+      "category": "pricing_promo",
+      "mean_abs_shap": 0.0931,
+      "rank": 32,
+      "relative_importance_pct": 0.37
+    },
+    {
+      "feature_name": "rolling_max_7",
+      "category": "rolling_stats",
+      "mean_abs_shap": 0.0902,
+      "rank": 33,
+      "relative_importance_pct": 0.36
+    },
+    {
+      "feature_name": "unit_cost",
+      "category": "categorical_hierarchy",
+      "mean_abs_shap": 0.0888,
+      "rank": 34,
+      "relative_importance_pct": 0.36
+    },
+    {
+      "feature_name": "rolling_min_14",
+      "category": "rolling_stats",
+      "mean_abs_shap": 0.0803,
+      "rank": 35,
+      "relative_importance_pct": 0.32
+    },
+    {
+      "feature_name": "sin_day_of_week",
+      "category": "temporal",
+      "mean_abs_shap": 0.0752,
+      "rank": 36,
+      "relative_importance_pct": 0.3
+    },
+    {
+      "feature_name": "momentum_7_1",
+      "category": "velocity_trend",
+      "mean_abs_shap": 0.0635,
+      "rank": 37,
+      "relative_importance_pct": 0.26
+    },
+    {
+      "feature_name": "day_of_month",
+      "category": "temporal",
+      "mean_abs_shap": 0.0633,
+      "rank": 38,
+      "relative_importance_pct": 0.25
+    },
+    {
+      "feature_name": "sku_code",
+      "category": "categorical_hierarchy",
+      "mean_abs_shap": 0.053,
+      "rank": 39,
+      "relative_importance_pct": 0.21
+    },
+    {
+      "feature_name": "rolling_max_14",
+      "category": "rolling_stats",
+      "mean_abs_shap": 0.0509,
+      "rank": 40,
+      "relative_importance_pct": 0.2
+    },
+    {
+      "feature_name": "rolling_std_7",
+      "category": "rolling_stats",
+      "mean_abs_shap": 0.0442,
+      "rank": 41,
+      "relative_importance_pct": 0.18
+    },
+    {
+      "feature_name": "rolling_trend_7",
+      "category": "rolling_stats",
+      "mean_abs_shap": 0.0355,
+      "rank": 42,
+      "relative_importance_pct": 0.14
+    },
+    {
+      "feature_name": "rolling_trend_14",
+      "category": "rolling_stats",
+      "mean_abs_shap": 0.0345,
+      "rank": 43,
+      "relative_importance_pct": 0.14
+    },
+    {
+      "feature_name": "rolling_max_28",
+      "category": "rolling_stats",
+      "mean_abs_shap": 0.0306,
+      "rank": 44,
+      "relative_importance_pct": 0.12
+    },
+    {
+      "feature_name": "cos_month",
+      "category": "temporal",
+      "mean_abs_shap": 0.0296,
+      "rank": 45,
+      "relative_importance_pct": 0.12
+    },
+    {
+      "feature_name": "year",
+      "category": "temporal",
+      "mean_abs_shap": 0.0187,
+      "rank": 46,
+      "relative_importance_pct": 0.08
+    },
+    {
+      "feature_name": "cos_day_of_week",
+      "category": "temporal",
+      "mean_abs_shap": 0.0088,
+      "rank": 47,
+      "relative_importance_pct": 0.04
+    },
+    {
+      "feature_name": "quarter",
+      "category": "temporal",
+      "mean_abs_shap": 0.0034,
+      "rank": 48,
+      "relative_importance_pct": 0.01
+    }
+  ],
+  "category_importance_breakdown": {
+    "rolling_stats": 49.43,
+    "temporal": 19.23,
+    "pricing_promo": 11.34,
+    "operational": 5.84,
+    "autoregressive_lag": 8.31,
+    "categorical_hierarchy": 4.69,
+    "velocity_trend": 1.13
+  },
+  "sample_explanations": [
+    {
+      "sku_id": "SKU-1001",
+      "store_id": "STORE-001",
+      "date": "2023-02-27 00:00:00",
+      "base_value": 28.97,
+      "predicted_value": 54.51,
+      "top_positive_drivers": [
+        {
+          "feature_name": "rolling_mean_28",
+          "feature_value": 45.29,
+          "attribution_units": 12.766,
+          "percentage_contribution": 34.400001525878906
+        },
+        {
+          "feature_name": "price_ratio",
+          "feature_value": 0.85,
+          "attribution_units": 6.445,
+          "percentage_contribution": 17.399999618530273
+        },
+        {
+          "feature_name": "rolling_mean_14",
+          "feature_value": 45.71,
+          "attribution_units": 3.093,
+          "percentage_contribution": 8.300000190734863
+        },
+        {
+          "feature_name": "discount_percentage",
+          "feature_value": 0.15,
+          "attribution_units": 2.814,
+          "percentage_contribution": 7.599999904632568
+        },
+        {
+          "feature_name": "is_promoted_int",
+          "feature_value": 1.0,
+          "attribution_units": 1.162,
+          "percentage_contribution": 3.0999999046325684
+        }
+      ],
+      "top_negative_drivers": [
+        {
+          "feature_name": "day_of_week",
+          "feature_value": 0.0,
+          "attribution_units": -2.19,
+          "percentage_contribution": 5.900000095367432
+        },
+        {
+          "feature_name": "month",
+          "feature_value": 2.0,
+          "attribution_units": -1.332,
+          "percentage_contribution": 3.5999999046325684
+        },
+        {
+          "feature_name": "is_weekend",
+          "feature_value": 0.0,
+          "attribution_units": -0.817,
+          "percentage_contribution": 2.200000047683716
+        },
+        {
+          "feature_name": "rolling_std_28",
+          "feature_value": 12.1,
+          "attribution_units": -0.315,
+          "percentage_contribution": 0.800000011920929
+        },
+        {
+          "feature_name": "rolling_std_14",
+          "feature_value": 14.91,
+          "attribution_units": -0.279,
+          "percentage_contribution": 0.800000011920929
+        }
+      ],
+      "business_narrative": "Forecast for SKU-1001 is 54.5 units (88.2% above baseline of 29.0 units). Primary upward drivers include: rolling_mean_28 (+12.8 units), favorable price point (+6.4 units), rolling_mean_14 (+3.1 units). Partially dampened by: mid-week low seasonality (-2.2 units), month (-1.3 units)."
+    },
+    {
+      "sku_id": "SKU-1001",
+      "store_id": "STORE-001",
+      "date": "2024-07-10 00:00:00",
+      "base_value": 28.97,
+      "predicted_value": 41.79,
+      "top_positive_drivers": [
+        {
+          "feature_name": "rolling_mean_28",
+          "feature_value": 44.93,
+          "attribution_units": 10.848,
+          "percentage_contribution": 42.29999923706055
+        },
+        {
+          "feature_name": "rolling_mean_14",
+          "feature_value": 45.43,
+          "attribution_units": 2.66,
+          "percentage_contribution": 10.399999618530273
+        },
+        {
+          "feature_name": "lag_56",
+          "feature_value": 50.0,
+          "attribution_units": 1.018,
+          "percentage_contribution": 4.0
+        },
+        {
+          "feature_name": "lag_1",
+          "feature_value": 54.0,
+          "attribution_units": 0.995,
+          "percentage_contribution": 3.9000000953674316
+        },
+        {
+          "feature_name": "inventory_level",
+          "feature_value": 1386.0,
+          "attribution_units": 0.881,
+          "percentage_contribution": 3.4000000953674316
+        }
+      ],
+      "top_negative_drivers": [
+        {
+          "feature_name": "day_of_week",
+          "feature_value": 2.0,
+          "attribution_units": -1.739,
+          "percentage_contribution": 6.800000190734863
+        },
+        {
+          "feature_name": "month",
+          "feature_value": 7.0,
+          "attribution_units": -1.339,
+          "percentage_contribution": 5.199999809265137
+        },
+        {
+          "feature_name": "price_ratio",
+          "feature_value": 1.0,
+          "attribution_units": -1.068,
+          "percentage_contribution": 4.199999809265137
+        },
+        {
+          "feature_name": "discount_percentage",
+          "feature_value": 0.0,
+          "attribution_units": -0.667,
+          "percentage_contribution": 2.5999999046325684
+        },
+        {
+          "feature_name": "is_weekend",
+          "feature_value": 0.0,
+          "attribution_units": -0.563,
+          "percentage_contribution": 2.200000047683716
+        }
+      ],
+      "business_narrative": "Forecast for SKU-1001 is 41.8 units (44.3% above baseline of 29.0 units). Primary upward drivers include: rolling_mean_28 (+10.8 units), rolling_mean_14 (+2.7 units), lag_56 (+1.0 units). Partially dampened by: mid-week low seasonality (-1.7 units), month (-1.3 units)."
+    },
+    {
+      "sku_id": "SKU-1001",
+      "store_id": "STORE-003",
+      "date": "2023-07-28 00:00:00",
+      "base_value": 28.97,
+      "predicted_value": 26.0,
+      "top_positive_drivers": [
+        {
+          "feature_name": "rolling_mean_14",
+          "feature_value": 34.71,
+          "attribution_units": 1.322,
+          "percentage_contribution": 9.100000381469727
+        },
+        {
+          "feature_name": "rolling_mean_28",
+          "feature_value": 30.32,
+          "attribution_units": 1.095,
+          "percentage_contribution": 7.599999904632568
+        },
+        {
+          "feature_name": "inventory_ratio",
+          "feature_value": 2.9,
+          "attribution_units": 0.586,
+          "percentage_contribution": 4.099999904632568
+        },
+        {
+          "feature_name": "lag_1",
+          "feature_value": 41.0,
+          "attribution_units": 0.534,
+          "percentage_contribution": 3.700000047683716
+        },
+        {
+          "feature_name": "days_of_inventory",
+          "feature_value": 2.9,
+          "attribution_units": 0.447,
+          "percentage_contribution": 3.0999999046325684
+        }
+      ],
+      "top_negative_drivers": [
+        {
+          "feature_name": "units_on_order",
+          "feature_value": 726.0,
+          "attribution_units": -1.536,
+          "percentage_contribution": 10.600000381469727
+        },
+        {
+          "feature_name": "day_of_week",
+          "feature_value": 4.0,
+          "attribution_units": -1.432,
+          "percentage_contribution": 9.899999618530273
+        },
+        {
+          "feature_name": "month",
+          "feature_value": 7.0,
+          "attribution_units": -0.926,
+          "percentage_contribution": 6.400000095367432
+        },
+        {
+          "feature_name": "week_of_year",
+          "feature_value": 30.0,
+          "attribution_units": -0.797,
+          "percentage_contribution": 5.5
+        },
+        {
+          "feature_name": "price_ratio",
+          "feature_value": 1.0,
+          "attribution_units": -0.728,
+          "percentage_contribution": 5.0
+        }
+      ],
+      "business_narrative": "Forecast for SKU-1001 is 26.0 units (10.2% below baseline of 29.0 units). Primary upward drivers include: rolling_mean_14 (+1.3 units), rolling_mean_28 (+1.1 units), inventory_ratio (+0.6 units). Partially dampened by: units_on_order (-1.5 units), mid-week low seasonality (-1.4 units)."
+    }
+  ]
+}

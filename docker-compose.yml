@@ -1,0 +1,58 @@
+services:
+  # ----------------------------------------------------------------------------
+  # FastAPI Microservice
+  # ----------------------------------------------------------------------------
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile.api
+    container_name: foresight-api
+    restart: unless-stopped
+    ports:
+      - "8000:8000"
+    environment:
+      - APP_ENV=production
+      - LOG_LEVEL=INFO
+      - FORESIGHT_WORKERS=2
+    volumes:
+      - ./data:/app/data
+      - ./models:/app/models
+      - ./reports:/app/reports
+      - ./logs:/app/logs
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 20s
+      timeout: 5s
+      retries: 3
+      start_period: 10s
+    networks:
+      - foresight-net
+
+  # ----------------------------------------------------------------------------
+  # Streamlit Enterprise Intelligence Dashboard
+  # ----------------------------------------------------------------------------
+  dashboard:
+    build:
+      context: .
+      dockerfile: Dockerfile.dashboard
+    container_name: foresight-dashboard
+    restart: unless-stopped
+    ports:
+      - "8501:8501"
+    environment:
+      - APP_ENV=production
+      - FASTAPI_URL=http://api:8000
+    volumes:
+      - ./data:/app/data
+      - ./models:/app/models
+      - ./reports:/app/reports
+      - ./logs:/app/logs
+    depends_on:
+      api:
+        condition: service_healthy
+    networks:
+      - foresight-net
+
+networks:
+  foresight-net:
+    driver: bridge
