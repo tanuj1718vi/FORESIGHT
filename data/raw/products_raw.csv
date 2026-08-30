@@ -1,0 +1,51 @@
+sku_id,product_name,category,subcategory,unit_price,unit_cost,lead_time_days,min_order_qty,demand_pattern,base_demand_rate,holding_cost_annual_rate
+SKU-1001,Electronics Audio Item 1,Electronics,Audio,145.25,70.5,19,26,regular,29.46,0.2
+SKU-1002,Apparel Footwear Item 2,Apparel,Footwear,117.95,46.33,21,69,regular,16.16,0.2
+SKU-1003,Home & Kitchen Appliances Item 3,Home & Kitchen,Appliances,127.03,66.89,18,93,regular,20.2,0.2
+SKU-1004,Grocery Pantry Item 4,Grocery,Pantry,6.38,4.31,4,353,volatile,12.09,0.2
+SKU-1005,Health & Beauty Skincare Item 5,Health & Beauty,Skincare,71.52,24.63,14,99,regular,8.96,0.2
+SKU-1006,Electronics Audio Item 6,Electronics,Audio,67.28,35.61,21,80,intermittent,1.98,0.2
+SKU-1007,Apparel Outerwear Item 7,Apparel,Outerwear,80.04,40.99,19,119,regular,12.99,0.2
+SKU-1008,Home & Kitchen Appliances Item 8,Home & Kitchen,Appliances,131.55,76.88,8,129,seasonal,24.37,0.2
+SKU-1009,Grocery Condiments Item 9,Grocery,Condiments,28.24,20.95,7,460,seasonal,19.19,0.2
+SKU-1010,Health & Beauty Haircare Item 10,Health & Beauty,Haircare,22.99,11.46,13,101,seasonal,36.15,0.2
+SKU-1011,Electronics Wearables Item 11,Electronics,Wearables,150.74,84.08,19,23,regular,22.7,0.2
+SKU-1012,Apparel Tops Item 12,Apparel,Tops,80.24,35.06,15,165,seasonal,31.61,0.2
+SKU-1013,Home & Kitchen Appliances Item 13,Home & Kitchen,Appliances,67.89,43.81,13,68,regular,16.99,0.2
+SKU-1014,Grocery Pantry Item 14,Grocery,Pantry,29.68,22.7,7,123,regular,14.46,0.2
+SKU-1015,Health & Beauty Haircare Item 15,Health & Beauty,Haircare,47.99,16.47,12,120,regular,25.91,0.2
+SKU-1016,Electronics Accessories Item 16,Electronics,Accessories,70.75,49.12,11,27,seasonal,28.86,0.2
+SKU-1017,Apparel Footwear Item 17,Apparel,Footwear,84.14,43.71,16,125,regular,16.38,0.2
+SKU-1018,Home & Kitchen Storage Item 18,Home & Kitchen,Storage,67.46,37.47,14,70,regular,10.6,0.2
+SKU-1019,Grocery Pantry Item 19,Grocery,Pantry,31.3,21.75,7,283,intermittent,3.34,0.2
+SKU-1020,Health & Beauty Haircare Item 20,Health & Beauty,Haircare,59.18,24.27,12,54,regular,27.86,0.2
+SKU-1021,Electronics Audio Item 21,Electronics,Audio,80.45,50.16,15,85,regular,26.85,0.2
+SKU-1022,Apparel Footwear Item 22,Apparel,Footwear,117.61,47.76,23,115,seasonal,32.52,0.2
+SKU-1023,Home & Kitchen Appliances Item 23,Home & Kitchen,Appliances,29.69,17.45,14,124,regular,15.26,0.2
+SKU-1024,Grocery Beverages Item 24,Grocery,Beverages,8.76,6.87,3,335,regular,28.35,0.2
+SKU-1025,Health & Beauty Personal Care Item 25,Health & Beauty,Personal Care,33.28,12.71,11,56,intermittent,2.45,0.2
+SKU-1026,Electronics Audio Item 26,Electronics,Audio,239.47,162.68,13,59,regular,28.63,0.2
+SKU-1027,Apparel Tops Item 27,Apparel,Tops,80.55,40.0,22,194,regular,17.66,0.2
+SKU-1028,Home & Kitchen Cookware Item 28,Home & Kitchen,Cookware,18.76,9.87,7,137,regular,20.19,0.2
+SKU-1029,Grocery Pantry Item 29,Grocery,Pantry,24.33,18.44,3,197,seasonal,38.06,0.2
+SKU-1030,Health & Beauty Supplements Item 30,Health & Beauty,Supplements,16.54,5.24,14,50,regular,20.21,0.2
+SKU-1031,Electronics Accessories Item 31,Electronics,Accessories,252.36,125.66,14,98,intermittent,1.87,0.2
+SKU-1032,Apparel Bottoms Item 32,Apparel,Bottoms,85.96,42.88,28,191,regular,8.99,0.2
+SKU-1033,Home & Kitchen Cookware Item 33,Home & Kitchen,Cookware,187.67,96.88,12,36,volatile,22.87,0.2
+SKU-1034,Grocery Snacks Item 34,Grocery,Snacks,19.81,14.91,3,409,seasonal,26.21,0.2
+SKU-1035,Health & Beauty Personal Care Item 35,Health & Beauty,Personal Care,61.28,27.42,7,30,regular,10.7,0.2
+SKU-1036,Electronics Peripherals Item 36,Electronics,Peripherals,252.72,167.22,18,34,seasonal,41.24,0.2
+SKU-1037,Apparel Tops Item 37,Apparel,Tops,59.34,23.41,16,98,regular,11.17,0.2
+SKU-1038,Home & Kitchen Dining Item 38,Home & Kitchen,Dining,17.42,10.72,10,41,seasonal,18.65,0.2
+SKU-1039,Grocery Pantry Item 39,Grocery,Pantry,24.98,17.81,5,267,volatile,19.31,0.2
+SKU-1040,Health & Beauty Skincare Item 40,Health & Beauty,Skincare,60.73,28.77,10,41,intermittent,2.19,0.2
+SKU-1041,Electronics Peripherals Item 41,Electronics,Peripherals,158.87,84.88,13,45,regular,28.35,0.2
+SKU-1042,Apparel Outerwear Item 42,Apparel,Outerwear,22.23,9.76,16,145,regular,11.09,0.2
+SKU-1043,Home & Kitchen Storage Item 43,Home & Kitchen,Storage,183.12,102.66,12,47,volatile,14.35,0.2
+SKU-1044,Grocery Condiments Item 44,Grocery,Condiments,27.65,22.05,6,143,volatile,20.94,0.2
+SKU-1045,Health & Beauty Haircare Item 45,Health & Beauty,Haircare,46.15,17.48,8,114,seasonal,27.38,0.2
+SKU-1046,Electronics Peripherals Item 46,Electronics,Peripherals,127.53,75.69,11,72,volatile,14.08,0.2
+SKU-1047,Apparel Footwear Item 47,Apparel,Footwear,49.77,19.95,17,176,regular,9.46,0.2
+SKU-1048,Home & Kitchen Dining Item 48,Home & Kitchen,Dining,118.43,74.38,9,128,regular,11.17,0.2
+SKU-1049,Grocery Condiments Item 49,Grocery,Condiments,9.38,7.1,7,331,regular,8.47,0.2
+SKU-1050,Health & Beauty Skincare Item 50,Health & Beauty,Skincare,12.88,5.99,13,34,seasonal,35.42,0.2

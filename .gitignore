@@ -67,28 +67,19 @@ Thumbs.db
 .ipynb_checkpoints/
 */.ipynb_checkpoints/*
 
-# Data & Model Artifacts (Keep raw structures, ignore large binary files)
-data/raw/*
-!data/raw/.gitkeep
-data/processed/*
-!data/processed/.gitkeep
+# Data & Model Artifacts (Track lightweight processed parquet & trained models)
+data/processed/*.csv
 data/external/*
 !data/external/.gitkeep
-models/*
-!models/.gitkeep
-*.pkl
+
+# MLflow Tracking & Temporary Binaries
+mlruns/
+.mlflow/
 *.joblib
-*.parquet
 *.h5
 *.onnx
 
-# MLflow Tracking
-mlruns/
-.mlflow/
-
-# Databases & Logs
-*.db
-*.sqlite
-*.sqlite3
+# Logs
 logs/
 *.log
+

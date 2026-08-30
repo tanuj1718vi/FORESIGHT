@@ -1,0 +1,13 @@
+{
+  "run_id": "audit-3331ca9b51f9",
+  "audit_date": "2026-08-26T22:28:26.221253",
+  "metrics": {
+    "total_features_monitored": 48.0,
+    "drifted_features_count": 33.0,
+    "drifted_features_pct": 68.75,
+    "baseline_wape": 0.1894,
+    "current_rolling_wape": 0.1721,
+    "wape_degradation_pct": -9.12
+  },
+  "retraining_action": "NO_ACTION"
+}

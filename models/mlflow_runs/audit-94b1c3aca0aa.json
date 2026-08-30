@@ -1,0 +1,14 @@
+{
+  "run_id": "audit-94b1c3aca0aa",
+  "tracking_mode": "LOCAL_JSON_FALLBACK",
+  "audit_date": "2026-08-29T20:53:57.755070",
+  "metrics": {
+    "total_features_monitored": 48.0,
+    "drifted_features_count": 33.0,
+    "drifted_features_pct": 68.75,
+    "baseline_wape": 0.1894,
+    "current_rolling_wape": 0.1721,
+    "wape_degradation_pct": -9.12
+  },
+  "retraining_action": "NO_ACTION"
+}
