@@ -122,8 +122,9 @@ def render_sku_explorer_tab() -> None:
     )
 
     # Glowing Executive Narrative Card
+    import textwrap
     st.markdown(
-        f"""
+        textwrap.dedent(f"""
         <div style="
             background: linear-gradient(135deg, rgba(99, 102, 241, 0.15) 0%, rgba(56, 189, 248, 0.1) 100%);
             border: 1px solid rgba(99, 102, 241, 0.35);
@@ -140,7 +141,7 @@ def render_sku_explorer_tab() -> None:
                 {local_exp.business_narrative}
             </div>
         </div>
-        """,
+        """).strip(),
         unsafe_allow_html=True,
     )
 

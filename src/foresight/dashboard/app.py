@@ -24,8 +24,9 @@ def main() -> None:
     )
 
     # Ultra-Modern 3D Cyberpunk Dark Glassmorphism CSS & Keyframe Animations
+    import textwrap
     st.markdown(
-        """
+        textwrap.dedent("""
         <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600;700&display=swap');
 
@@ -150,7 +151,7 @@ def main() -> None:
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
         }
         </style>
-        """,
+        """).strip(),
         unsafe_allow_html=True,
     )
 
@@ -161,7 +162,7 @@ def main() -> None:
     # Sidebar Branding & Live Telemetry
     with st.sidebar:
         st.markdown(
-            """
+            textwrap.dedent("""
             <div style="padding: 10px 0;">
                 <div style="display: flex; align-items: center; gap: 10px;">
                     <div style="font-size: 1.8rem; filter: drop-shadow(0 0 10px #38bdf8);">🔮</div>
@@ -171,12 +172,12 @@ def main() -> None:
                     </div>
                 </div>
             </div>
-            """,
+            """).strip(),
             unsafe_allow_html=True,
         )
 
         st.markdown(
-            """
+            textwrap.dedent("""
             <div style="
                 background: rgba(16, 185, 129, 0.1);
                 border: 1px solid rgba(16, 185, 129, 0.3);
@@ -190,7 +191,7 @@ def main() -> None:
                 <span class="live-dot"></span>
                 <span style="font-size: 0.80rem; font-weight: 600; color: #34d399;">LIVE INFERENCE ACTIVE</span>
             </div>
-            """,
+            """).strip(),
             unsafe_allow_html=True,
         )
 
@@ -211,7 +212,7 @@ def main() -> None:
 
     # Header Hero Banner with 3D Holographic Visual
     st.markdown(
-        """
+        textwrap.dedent("""
         <div style="
             position: relative;
             background: linear-gradient(135deg, rgba(30, 41, 59, 0.8) 0%, rgba(15, 23, 42, 0.95) 100%);
@@ -243,7 +244,7 @@ def main() -> None:
                 </div>
             </div>
         </div>
-        """,
+        """).strip(),
         unsafe_allow_html=True,
     )
 

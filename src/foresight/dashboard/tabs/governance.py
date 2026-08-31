@@ -76,28 +76,29 @@ def render_governance_tab() -> None:
     st.markdown("#### 📦 Production Model Registry & Environment Signatures")
 
     if champion:
+        import textwrap
         meta_col1, meta_col2 = st.columns(2)
         with meta_col1:
             st.markdown(
-                """
+                textwrap.dedent(f"""
                 <div style="background: rgba(30,41,59,0.5); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 14px 18px;">
                     <div style="color: #38bdf8; font-weight: 700; margin-bottom: 8px;">MODEL RUNTIME ATTRIBUTES</div>
-                    <div>- <b>Champion Algorithm:</b> <code>""" + str(champion.name) + """</code></div>
-                    <div>- <b>Engineered Features:</b> <code>""" + str(len(champion.feature_names_ or [])) + """ features</code></div>
+                    <div>- <b>Champion Algorithm:</b> <code>{champion.name}</code></div>
+                    <div>- <b>Engineered Features:</b> <code>{len(champion.feature_names_ or [])} features</code></div>
                     <div>- <b>Engine:</b> <code>joblib / scikit-learn 1.6 / xgboost 2.1</code></div>
                 </div>
-                """,
+                """).strip(),
                 unsafe_allow_html=True,
             )
         with meta_col2:
             st.markdown(
-                """
+                textwrap.dedent("""
                 <div style="background: rgba(30,41,59,0.5); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 14px 18px;">
                     <div style="color: #10b981; font-weight: 700; margin-bottom: 8px;">GOVERNANCE COMPLIANCE</div>
                     <div>- <b>Target Variable:</b> <code>quantity</code> (Daily Sales Units)</div>
                     <div>- <b>Validation Scheme:</b> <code>RollingOriginCV</code> (3 Folds)</div>
                     <div>- <b>Deployment Status:</b> <code>ACTIVE_PRODUCTION_CHAMPION</code></div>
                 </div>
-                """,
+                """).strip(),
                 unsafe_allow_html=True,
             )
