@@ -1,12 +1,19 @@
 """Prescriptive recommendation engine and lateral multi-store rebalancing logic."""
 
+from __future__ import annotations
+
+from typing import TYPE_CHECKING
+
 from foresight.config.constants import RecommendationAction, RecommendationUrgency
 from foresight.inventory.schema import InventoryHealthStatus, InventoryOptimizationResult, InventoryParameters
 from foresight.recommendations.explanations import build_recommendation_justification
 from foresight.recommendations.rules import evaluate_action_rule
 from foresight.recommendations.schemas import PrescriptiveRecommendation
 from foresight.recommendations.scoring import calculate_recommendation_confidence
-from foresight.risk.schema import RiskAssessment
+
+if TYPE_CHECKING:
+    from foresight.risk.schema import RiskAssessment
+
 
 
 class PrescriptiveEngine:

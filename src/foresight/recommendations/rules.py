@@ -1,8 +1,14 @@
 """Business rules for prescriptive supply chain decisions."""
 
+from __future__ import annotations
+
+from typing import TYPE_CHECKING
+
 from foresight.config.constants import RecommendationAction, RecommendationUrgency
 from foresight.inventory.schema import InventoryHealthStatus, InventoryOptimizationResult, InventoryParameters
-from foresight.risk.schema import RiskAssessment
+
+if TYPE_CHECKING:
+    from foresight.risk.schema import RiskAssessment
 
 
 def evaluate_action_rule(

@@ -1,8 +1,14 @@
 """Natural language justification generation for prescriptive recommendations."""
 
+from __future__ import annotations
+
+from typing import TYPE_CHECKING
+
 from foresight.config.constants import RecommendationAction
 from foresight.inventory.schema import InventoryOptimizationResult, InventoryParameters
-from foresight.risk.schema import RiskAssessment
+
+if TYPE_CHECKING:
+    from foresight.risk.schema import RiskAssessment
 
 
 def build_recommendation_justification(
